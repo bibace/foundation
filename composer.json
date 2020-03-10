@@ -1,0 +1,39 @@
+{
+    "name": "bibace/foundation",
+    "description": "a foundation library for webservices development",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Bibace",
+            "email": "lucidwood@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2",
+        "ext-fileinfo": "*",
+        "ext-openssl": "*",
+        "ext-simplexml": "*",
+        "guzzlehttp/guzzle": "^6.2",
+        "pimple/pimple": "^3.0",
+        "psr/simple-cache": "^1.0",
+        "symfony/cache": "^3.3 || ^4.3 || ^5.0",
+        "symfony/http-foundation": "^2.7 || ^3.0 || ^4.0 || ^5.0",
+        "symfony/psr-http-message-bridge": "^0.3 || ^1.0 || ^2.0"
+    },
+    "require-dev": {
+        "mockery/mockery": "^1.2.3",
+        "phpstan/phpstan": "^0.12.0",
+        "phpunit/phpunit": "^7.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bibace\\Foundation\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Bibace\\Foundation\\Tests\\": "tests/"
+        }
+    }
+}
